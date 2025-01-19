@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:lab2/providers/FavoritesProvider.dart';
+import 'package:provider/provider.dart';
 import 'screens/home.dart';
 import 'screens/random_joke.dart';
 
 
 void main() {
-  runApp(MyApp());
+
+  runApp(
+    ChangeNotifierProvider(
+        create: (context) => FavoritesProvider(),
+      child: MyApp(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -22,3 +30,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+

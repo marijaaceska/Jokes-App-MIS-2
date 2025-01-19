@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "730535795196",
+    "project_id": "jokes-app-ce701",
+    "storage_bucket": "jokes-app-ce701.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730535795196:android:3c18dc902ff5608b77fa79",
+        "android_client_info": {
+          "package_name": "com.example.jokesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZzc7mL4kvLVxsdtwZhwlhul-RRiRlNLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730535795196:android:3475bc102395295277fa79",
+        "android_client_info": {
+          "package_name": "com.example.lab2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZzc7mL4kvLVxsdtwZhwlhul-RRiRlNLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

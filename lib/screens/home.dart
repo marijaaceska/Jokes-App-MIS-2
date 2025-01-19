@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../widgets/cards/card_data.dart';
+import 'favorite.dart';
 import 'random_joke.dart';
 
 
@@ -29,6 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,18 +44,24 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
 
         actions: [
-          ElevatedButton.icon(
+          IconButton(
             icon: Icon(Icons.lightbulb, color: Colors.blue),
-            label: Text('Joke'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue[100],
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            ),
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => RandomJokeScreen(),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.favorite, color: Colors.red),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FavoritesScreen(),
                 ),
               );
             },
